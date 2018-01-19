@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="mysqldb" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>Model.PurchaseEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/shoping"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"></property>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="16667omgdmG"/>
+        </properties>
+    </persistence-unit>
+</persistence>
